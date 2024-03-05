@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body, html{
+            height: 100%;
+        }
+        .contenedor{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .superior{
+            flex: 0 0 30%;
+        }
+        
+        .inferior{
+            flex:1;
+            display: flex;
+        }
+
+        .izquierda{
+            flex: 0 0 40%;
+            height: 800px
+        }
+
+        .cuerpo{
+            flex:1;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+
+   <div class="contenedor">
+        <iframe src="superior.html" frameborder="0" class="superior"></iframe>
+        <div class="inferior">
+            <iframe src="izquierda.html" frameborder="0" class="izquierda"></iframe>
+            <iframe src="cuerpo.html" frameborder="0" class="cuerpo" name="contenedor"></iframe>
+        </div>
+        
+
+   </div>
+   <iframe src="" frameborder="0"></iframe>
+    
+</body>
+</html>
